@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+header {
+  padding: 20px 0;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+header form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #fff;
+  padding: 0 10px;
+}
+
+header form input {
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  background-color: transparent;
+}
+
+header form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.666);
+}
+
+header form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.666);
+}
+
+header form input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.666);
+}
+
+header form input::placeholder {
+  color: rgba(255, 255, 255, 0.666);
+}
+
+header form i {
+  color: #fff;
+}
+
+header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header ul li i {
+  color: #fff;
+  font-size: 14px;
+}
+
+header .right #basket {
+  position: relative;
+}
+
+header .right #basket span {
+  position: absolute;
+  top: -13px;
+  right: -7px;
+  background-color: #0EB582;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 100%;
+  font-size: 12px;
+}
+
+header .right i {
+  color: #fff;
+  font-size: 19px;
+  padding: 7px;
+  border-radius: 100%;
+  margin-left: 15px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.128);
+}
+
+header .right i:hover {
+  background-color: #0EB582;
+}
+
+#Slider {
+  background-image: url(https://demo.themewinter.com/wp/turitors/wp-content/uploads/2019/12/slider_image1-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 12rem;
+  z-index: 1;
+  position: relative;
+}
+
+#Slider .overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2f3e5d83;
+}
+
+#Slider .slider-text {
+  color: #fff;
+}
+
+#Slider .slider-text p {
+  font-size: 16px;
+}
+
+#Slider .slider-text h2 {
+  font-size: 50px;
+}
+
+#Slider .slider-text a {
+  padding: 14px 40px;
+  font-size: 14px;
+  border-radius: 30px;
+  margin-right: 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  background-color: #0EB582;
+}
+
+#Slider .slider-text a:last-child {
+  background-color: rgba(255, 255, 255, 0.301);
+}
+
+#Counter {
+  padding: 2rem 0;
+  background-image: url(https://demo.themewinter.com/wp/turitors/wp-content/uploads/2019/10/funfact_bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#Subjects {
+  padding-bottom: 3rem;
+}
+
+#Subjects a {
+  padding: 14px 40px;
+  font-size: 14px;
+  border-radius: 30px;
+  margin-right: 20px;
+  border: 2px solid #0EB582;
+  color: #0EB582;
+  font-weight: bold;
+  background-color: #0eb5832b;
+}
+
+#Subjects .bottom .box {
+  padding: 20px;
+  border: 2px solid #0eb58360;
+  border-radius: 8px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+}
+
+#Subjects .bottom .box::before {
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 4px dotted #0EB582;
+  left: 10px;
+  top: 10px;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+#Subjects .bottom .box::after {
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 4px dotted #0EB582;
+  left: 10px;
+  top: 10px;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+#Subjects .bottom .box:hover {
+  background-color: #0EB582;
+}
+
+#Subjects .bottom .box:hover img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#Subjects .bottom .box:hover::before, #Subjects .bottom .box:hover::after {
+  opacity: 1;
+}
+
+#Subjects .bottom .box:hover::before {
+  left: -19px;
+  top: -21px;
+}
+
+#Subjects .bottom .box:hover::after {
+  left: -10px;
+  top: -12px;
+}
+
+#Subjects .bottom .box:hover h4 {
+  color: #fff;
+}
+
+#Subjects .bottom .box h4 {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#Subjects .bottom .box img {
+  width: 30%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-bottom: 17px;
+}
+
+#Courses {
+  padding: 3rem 0;
+  background-image: url(https://demo.themewinter.com/wp/turitors/wp-content/uploads/2019/12/course_bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#Courses .course-btn {
+  padding: 14px 40px;
+  font-size: 14px;
+  border-radius: 30px;
+  margin-right: 20px;
+  border: 2px solid #0EB582;
+  color: #0EB582;
+  font-weight: bold;
+  background-color: #0eb5832b;
+}
+
+#Courses .bottom {
+  margin-top: 7rem;
+}
+
+#Courses .bottom .box {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #0eb5833b;
+  position: relative;
+  border-radius: 18px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin-bottom: 9rem;
+}
+
+#Courses .bottom .box:hover {
+  background-color: #0EB582;
+}
+
+#Courses .bottom .box .top {
+  position: relative;
+  top: -7rem;
+}
+
+#Courses .bottom .box .top img {
+  border-radius: 18px;
+}
+
+#Courses .bottom .box .top span {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #0EB582;
+  color: #fff;
+  padding: 6px 22px;
+  border-radius: 30px;
+}
+
+#Find {
+  background-image: url(https://demo.themewinter.com/wp/turitors/wp-content/uploads/2019/11/cta_bg.png);
+  background-color: #0EB582;
+  padding: 6rem 0;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+}
+
+#Find a {
+  padding: 14px 40px;
+  font-size: 14px;
+  border-radius: 30px;
+  margin-right: 20px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.38);
+}
+/*# sourceMappingURL=style.css.map */
